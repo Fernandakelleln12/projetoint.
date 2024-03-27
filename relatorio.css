@@ -1,0 +1,199 @@
+*{
+	padding: 0%;
+	margin: 0% auto;
+}
+
+body{
+	background-color: #a1a1a1;
+	flex-direction: column;
+	
+}
+#container{
+	width: 3800px;
+	margin: 0% auto;
+	background-color: #c9c9c9;
+	justify-content: center;
+	align-items: center;
+}
+header {
+	background-color:#FCF5F3;
+	padding: 0px;
+	height: 75px;
+	flex: 1 1 100vw;
+	justify-content: flex-end;
+	align-items: center;
+	order: 4;
+}
+footer {
+	width: 10px;
+	position:relative;
+    top: 10px;
+    left: 800px;
+	
+	
+}
+
+ 
+.principal{
+	h1 {
+		color: #f2d9d9;
+		text-align: center;
+	}
+	
+	
+	
+	label {
+		display: block;
+		margin-bottom: 10px;
+		color: #f2d9d9;
+		
+		
+	}
+	.card img{
+		width: 290px;
+		position: relative;
+		top: 30px;
+		left: 1110px;
+	}
+	form {
+		background-color:#ffffff;
+		padding: 20px;
+		border-radius: 5px;
+		max-width: 400px;
+		margin: 20px auto;
+	}
+	
+	
+	input[type="email"],
+	textarea {
+		width: 90%;
+		padding: 10px;
+		margin-bottom: 30px;
+		border: 1px solid #f2d9d9;
+		border-radius: 4px;
+	}
+	
+	input[type="submit"] {
+		width: 100%;
+		padding: 10px;
+		background-color: #f2d9d9;
+		color: white;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+	
+	input[type="submit"]:hover {
+		background-color: #f2d9d9;
+	}
+	.inicio{
+		position: relative;
+		font-size: 20px;
+		text-decoration: none;
+		color: white;
+		left: 125px;
+		top: 60px;
+	}
+	
+	.cadastro{
+		position: relative;
+		font-size: 20px;
+		text-decoration: none;
+		color: white;
+		left: 70px;
+		top: 835px;
+		/* top: 60px; */
+	}
+	
+	.contato{
+		position: relative;
+		font-size: 20px;
+		color: white;
+		left: 115px;
+		top: 825px;
+	}
+}
+nav{
+	/* Alinha os itens na vertical. */
+	justify-content: flex-end;
+
+	/* Alinha os itens na horizontal. */
+	align-items: center;
+
+	/* Junção de flex-grow, flex-shrink e flex-basis.  */
+	/* flex-grow – Habilidade de um flex item crescer. */
+	/* flex-shrink - Capacidade de redução do item.    */
+	/* flex-basis – Tamanho inicial do item.           */
+	flex: 1 1 200px;
+	
+	order: 1;
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(255, 255, 255, 0.8);
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	display: none;
+	opacity: 0;
+	transition: 0.3s;
+}
+#openMenu,#closeMenu{
+	/* Remove a borda. */
+	border: none;
+
+	/* Remove a cor de fundo. */
+	background: none;
+
+	/* Tamanho da fonte. */
+	font-size: 30px;
+
+	/* Espessura da forte. */
+	font-weight: bold;
+
+	/* Margem ao redor do elemento              */
+	/* (superior, direito, inferior e esquerdo) */
+	padding: 0px 5px 0px 5px;
+
+	/* Muda o cursor do mouse para ponteiro.*/
+	cursor: pointer;
+
+	/* Oculta o elemento. */
+	display: none;
+	display: block;
+
+}
+
+	
+
+#openMenu{
+	margin-left: auto;
+}
+#closeMenu{
+	position: fixed;
+	right: 15px;
+    top: 15px;
+}
+
+main #fundo{
+	width: 100%;
+	background-size: cover;
+}
+aside {
+	/* Ordem da visualização dos elementos. */
+	order: 3;
+	height: 60px;
+}
+ aside img{
+	width: 50px;
+	height: 50px;
+	justify-content: bottom;
+} 
+aside {
+	/* Junção de flex-grow, flex-shrink e flex-basis.  */
+	/* flex-grow – Habilidade de um flex item crescer. */
+	/* flex-shrink - Capacidade de redução do item.    */
+	/* flex-basis – Tamanho inicial do item.           */
+	flex: 1 1 200px;
+	background: #BFA6AB;}
