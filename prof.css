@@ -1,0 +1,111 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+   
+   
+
+}
+
+
+.main-content h1 {
+    color:#988780;
+    text-align: center;
+}
+.main-content p {
+    color: #b5d2dd;
+    text-align: center;
+}
+.outros-botoes button {
+    display: inline-block;
+    margin: 10px;
+    padding: 40px;
+    background-color: #e4cec8;
+    color: #f1eceb;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    width: 400px;
+    
+}
+.aulas button{
+    display:inline;
+    margin: 40px;
+    padding: 40px;
+    background-color: #e4cec8;
+    color: #f1eceb;
+    border: 100px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    width: 500px;
+    float: center;
+    
+}
+.aulas {
+    margin-bottom: 20px; /* Adiciona espaço abaixo do botão Minhas Aulas */
+}
+
+.outros-botoes button {
+    margin-right: 10px; /* Adiciona espaço entre os botões */
+}
+
+
+
+.students-list {
+    background-color: #dfd9d9;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.students-list h2 {
+    color: #333;
+}
+
+.students-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.students-list li {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+
+.students-list {
+    float: right; /* Isso fará com que a lista flutue para o lado direito da tela */
+    width: 500px; /* Defina a largura desejada para a lista */
+    
+}
+
+
+.outros-botoes {
+    float:none; /* Isso fará com que a div flutue para o lado esquerdo */
+}
+
+/* Centraliza os elementos horizontalmente */
+ .main-content {
+    display:flow-root;
+    justify-content: center;
+}
+
+/* Alinha os elementos verticalmente */
+.outros-botoes,
+.students-list {
+    margin-top: 20px;
+}
+.outros-botoes{
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .students-list{
+    position: relative right;
+    z-index: 2;
+  }
+ 
+  
+  
