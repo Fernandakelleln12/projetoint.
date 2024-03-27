@@ -1,0 +1,186 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header, nav, main, aside, footer {
+    display: flex;
+	margin: 3px;
+}
+
+header {
+
+	flex: 1 1 100vw;
+	height: 50px;
+	background: #FCF5F3;
+}
+
+header #logo {
+	
+	display: flex;
+	flex: 0 1 110px;
+	justify-content: center;
+	align-items: center;
+}
+
+#openMenu, #closeMenu {
+	
+	border: none;
+	background: none;
+	font-size: 30px;
+	font-weight: bold;
+	padding: 0px 5px 0px 5px;
+	cursor: pointer;
+	display: none;
+}
+nav {
+	
+	justify-content: flex-end;
+	align-items: center;
+	flex: 1 1 200px;
+}
+main {
+	flex: 20 1 500px;
+	height: 834px;
+	background: rgb(255,250,255);
+background: linear-gradient(90deg, rgba(255,250,255,1) 0%, rgba(254,246,251,0.17970938375350143) 35%, rgba(251,247,251,1) 100%);
+}
+
+main #fundo{
+	width: 100%;
+	background-size: cover;
+}
+
+aside {
+	flex: 1 1 200px;
+	background: #BFA6AB;
+}
+
+footer {
+
+	flex: 1 1 100vw;
+	height: 50px;
+	background: #FCF5F3;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+footer img{
+	width: 40px;
+	height: 40px;
+}
+
+footer a{
+	justify-content: flex-end;
+	align-items: center;
+	margin: 0 1%;
+}
+
+a {
+	
+	text-decoration: none;
+	color: inherit;
+}
+
+
+@media only screen and (max-width: 717px) {
+	#openMenu, #closeMenu {
+		display: block;
+	}
+
+	#openMenu {
+		margin-left: auto;
+	}
+
+	#closeMenu {
+	
+		position: fixed;
+		right: 15px;
+		top: 15px;
+	}
+
+	header {
+		order: 0;
+	}
+
+	nav {
+		
+		order: 1;
+		position: fixed;
+		width: 100vw;
+		height: 100vh;
+		background: rgba(255, 255, 255, 0.8);
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin: 0;
+		display: none;
+		opacity: 0;
+		transition: 0.3s;
+	}
+
+	nav a {
+		
+		margin: 3%;
+	}
+
+	main {
+		
+		order: 2;
+	}
+
+	aside {
+		order: 3;
+		height: 60px;
+	}
+
+	footer {
+		order: 4;
+	}
+}
+nav a {
+	margin: 0 3%;
+	font-size: 15pt;
+}
+
+body{
+    color: #F2D9D9;
+    text-align: center;
+    background-color: #f1f1f1; 
+}
+.card button{
+    width: 10%;
+    padding: 10px;
+    background-color: #f2d9d9;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+form {
+    background-color:#ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 400px;
+    margin: 20px auto;
+}
+input,
+textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #f2d9d9;
+    border-radius: 4px;
+}
+input,
+::placeholder{
+    color: #F2D9D9;
+}
+
+
+
+
+
+
+    
+
+
